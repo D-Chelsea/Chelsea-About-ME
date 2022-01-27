@@ -1,5 +1,5 @@
 body{
-  background-color: #F5E3E0;
+  background-color: #f6cbca;
   margin: 0;
 }
 header{
@@ -9,17 +9,28 @@ header{
   margin: auto;
   padding: 20px;
 }
+/* this will align everything with the class "center" and "intro"*/
+.center,.intro{
+  text-align: center;
+}
 
-main,article{
+/*this makes the padding/margins on the boxes for main element*/
+main{
   padding: 50px;
+  width:500px;
+  margin: auto;
+  text-align: center;
+  padding-bottom:20px;
 
 }
+
+/*sperated to create a text shadow to these tags*/ 
 h1,h2{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-shadow: 0px 0px 5px #FFF, 0px 0px 5px #FFF;
 }
 
-
+/* this created the diamond horizontal rule */
 hr{
   width: 20px;
   height: 20px;
@@ -31,36 +42,66 @@ hr{
   transform: rotate(45deg);
 }
 
+/*all img edits */
 img{
   border-radius: 50%;
   box-shadow: 0px 0px 10px #000;
   margin-left: auto;
   margin-right:auto;
   display: block;
+  height: 450px;
+  width:360px;
+  padding: 10px;
+  background-color: #000;
 }
 
-h3,h4,p,ul,ol{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-color:#FFF;
-  text-align: left;
-}
 
-.container{
-  width:600px;
-  margin: auto;
-}
-.center{
+h3{
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+p,ul{
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* I wanted the ol contact box margin to be smaller than the the other elements */
 ol{
+  width:100px;
+  margin: auto;
+  text-align: center;
+  padding-bottom:20px;
+}
+/* customization for the numbered list of contact links box */
+ol{
+  font-family:Georgia, 'Times New Roman', Times, serif;
   list-style-position:inside;
   background-color: #FFF;
   box-shadow: 10px 10px #000;
+  text-align: left;
+  padding: 10px;
 }
 
-.center,p{
-  text-align: center;
+/* this separated all the elements in the main element of the html */
+.contact ,article,.intro{
+  margin: 30px;
 }
+
+/* the .bottom is for the hr at the bottom */
+.bottom{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #000;
+  color: #000;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  transform: rotate(45deg);
+  margin-top: 20px;
+}
+
+/* link customization and colors :) */
 a{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 15px
@@ -69,3 +110,13 @@ a:link {color: blue}
 a:visited {color: red}
 a:hover {color:purple}
 a:active {color:cornflowerblue}
+
+.footer-credit,.credit{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background-color: #000;
+  height: 50px;
+  width:auto;
+  margin: auto;
+  text-align: center;
+}
